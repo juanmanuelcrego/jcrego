@@ -5,7 +5,7 @@
     justify-content: space-between
     align-items: center
     align-content: center
-    width: 100%
+    width: 100vw
     height: 66px
     background-color: $dark-02
     box-shadow: 0 0 05px 02px rgba(0, 0, 0, 0.2)
@@ -23,12 +23,10 @@
 
 @media screen and ( min-width: 0px ) and ( max-width: 189px )
     .header
-        flex-flow: column
-        height: 100px
+        flex-flow: row
         .logo
             display: none
 
 @media screen and ( min-width: 189px ) and ( max-width: 255px )
     .header
-        flex-flow: column
-        height: 100px
+        flex-flow: row
