@@ -74,10 +74,10 @@ const Article = () => {
                 <h2>About</h2>
 
                 <Avatar></Avatar>
-
-                <p id='p'>
+                {/* VER EN 246 PARA FIGMA  */}
+                <p id='p'> 
                     Hola! mi nombre es Juan Manuel Crego Risso, tengo 29 años y soy de Buenos Aires, Argentina.
-                    Trabajo como front end developer y me gustaría contarte porqué elegí el Front End no solo
+                    Trabajo como Front End Developer y me gustaría contarte porqué elegí el Front End no solo
                     como profesión, sino también como medio por el que expreso mi pasión, el diseño.
                     Desde chico siempre me gustó el arte y la tecnología, por lo que conseguir llevar a
                     cabo mis ideas a través de una computadora era cuestión de tiempo, de aprendizaje y por
