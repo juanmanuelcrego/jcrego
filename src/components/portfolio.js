@@ -10,50 +10,50 @@ const Portfolio = (props) => (
         query {
             custosol: file(relativePath: {eq: "portfolio/custsol.png"}) {
                 childImageSharp {
-                  fixed(width: 400, height: 300) {
-                    ...GatsbyImageSharpFixed
+                  fluid(maxWidth: 1000, maxHeight: 400) {
+                    ...GatsbyImageSharpFluid
                   }
                 }
               }
               power: file(relativePath: {eq: "portfolio/power.png"}) {
                 childImageSharp {
-                  fixed(width: 400, height: 455) {
-                    ...GatsbyImageSharpFixed
+                  fluid(maxWidth: 1000, maxHeight: 400) {
+                    ...GatsbyImageSharpFluid
                   }
                 }
               }
               dashboard: file(relativePath: {eq: "portfolio/dashboard.png"}) {
                 childImageSharp {
-                  fixed(width: 400, height: 600) {
-                    ...GatsbyImageSharpFixed
+                  fluid(maxWidth: 1000, maxHeight: 400) {
+                    ...GatsbyImageSharpFluid
                   }
                 }
               }
               teslapp: file(relativePath: {eq: "portfolio/teslapp.png"}) {
                 childImageSharp {
-                  fixed(width: 400, height: 500) {
-                    ...GatsbyImageSharpFixed
+                  fluid(maxWidth: 1000, maxHeight: 400) {
+                    ...GatsbyImageSharpFluid
                   }
                 }
               }
               hamburguer: file(relativePath: {eq: "portfolio/hamburguer.png"}) {
                 childImageSharp {
-                  fixed(width: 300, height: 300) {
-                    ...GatsbyImageSharpFixed
+                  fluid(maxWidth: 1000, maxHeight: 400) {
+                    ...GatsbyImageSharpFluid
                   }
                 }
               }
               sorteo: file(relativePath: {eq: "portfolio/sorteo.png"}) {
                 childImageSharp {
-                  fixed(width: 350, height: 315) {
-                    ...GatsbyImageSharpFixed
+                  fluid(maxWidth: 1000, maxHeight: 400) {
+                    ...GatsbyImageSharpFluid
                   }
                 }
               }
               jackpot: file(relativePath: {eq: "portfolio/jackpot.png"}) {
                 childImageSharp {
-                  fixed(width: 400, height: 316) {
-                    ...GatsbyImageSharpFixed
+                  fluid(maxWidth: 1000, maxHeight: 400) {
+                    ...GatsbyImageSharpFluid
                   }
                 }
               }
@@ -213,7 +213,7 @@ const Portfolio = (props) => (
                 <h2 className='title-portfolio'>Portfolio</h2>
                 <div className='about-text'>
                 <p>
-                    A continuación podrás ver algunos de los trabajos realizados como Freelance,
+                    A continuación podrás ver los últimos trabajos realizados como Freelance en 2020,
                     los diseños y desarrollos hechos en la empresa donde me encuentro trabajando
                     actualmente son privados y no puedo compartirlos en la web.
                 </p>
@@ -240,7 +240,7 @@ const Portfolio = (props) => (
                         </div>
                     </div>
                     <div className='screen'>
-                        <Img className='skill-box' fixed={data.custosol.childImageSharp.fixed} alt="Custosol - Portfolio" />
+                        <Img className='skill-box' fluid={data.custosol.childImageSharp.fluid} alt="Custosol - Portfolio" />
                     </div>
                 </div>
 
@@ -249,11 +249,11 @@ const Portfolio = (props) => (
                 <div className='card-div'>
                     <div className='portfolio-card'>
                         <div className='card-header'>
-                            <h3>Mega Millon</h3>
+                            <h3>Proyecto Millon</h3>
                         </div>
                         <div className='card-description'>
                             <p>
-                                Mega Millon es el prototipo de un home para sorteos del tipo "Power Ball"
+                                Prototipo de un home para sorteos
                                 por cuestiones legales no puedo compartir el código pero si un demo.
                             </p>
                             <p>
@@ -273,7 +273,7 @@ const Portfolio = (props) => (
                         </div>
                     </div>
                     <div className='screen'>
-                        <Img className='skill-box' fixed={data.power.childImageSharp.fixed} alt="Mega Millon - Portfolio" />
+                        <Img className='skill-box' fluid={data.power.childImageSharp.fluid} alt="Mega Millon - Portfolio" />
                     </div>
                 </div>
 
@@ -286,7 +286,7 @@ const Portfolio = (props) => (
                         </div>
                         <div className='card-description'>
                             <p>
-                                Para este proyecto también del mismo cliente del Mega Millon, utilicé en primera instancia
+                                Para este proyecto también del mismo cliente del anterior, utilicé en primera instancia
                                 FIGMA para el diseño, Angular para el desarrollo, y SASS para el maquetado
                                 para crear un dashboard con datos que posteriormente serían consultados a través
                                 de NodeJS.
@@ -311,7 +311,7 @@ const Portfolio = (props) => (
                         </div>
                     </div>
                     <div className='screen'>
-                        <Img className='skill-box' fixed={data.dashboard.childImageSharp.fixed} alt="Dashboard - Portfolio" />
+                        <Img className='skill-box' fluid={data.dashboard.childImageSharp.fluid} alt="Dashboard - Portfolio" />
                     </div>
                 </div>
 
@@ -346,7 +346,7 @@ const Portfolio = (props) => (
                         </div>
                     </div>
                     <div className='screen'>
-                        <Img className='skill-box' fixed={data.teslapp.childImageSharp.fixed} alt="Teslapp - Portfolio" />
+                        <Img className='skill-box' fluid={data.teslapp.childImageSharp.fluid} alt="Teslapp - Portfolio" />
                     </div>
                 </div>
 
@@ -371,7 +371,7 @@ const Portfolio = (props) => (
                         </div>
                     </div>
                     <div className='screen'>
-                        <Img className='skill-box' fixed={data.hamburguer.childImageSharp.fixed} alt="Hamburger - Portfolio" />
+                        <Img className='skill-box' fluid={data.hamburguer.childImageSharp.fluid} alt="Hamburger - Portfolio" />
                     </div>
                 </div>
 
@@ -399,7 +399,7 @@ const Portfolio = (props) => (
                         </div>
                     </div>
                     <div className='screen'>
-                        <Img className='skill-box' fixed={data.sorteo.childImageSharp.fixed} alt="Sorteo - Portfolio" />
+                        <Img className='skill-box' fluid={data.sorteo.childImageSharp.fluid} alt="Sorteo - Portfolio" />
                     </div>
                 </div>
 
@@ -426,7 +426,7 @@ const Portfolio = (props) => (
                         </div>
                     </div>
                     <div className='screen'>
-                        <Img className='skill-box' fixed={data.jackpot.childImageSharp.fixed} alt="Jackpot - Portfolio" />
+                        <Img className='skill-box' fluid={data.jackpot.childImageSharp.fluid} alt="Jackpot - Portfolio" />
                     </div>
                 </div>
 

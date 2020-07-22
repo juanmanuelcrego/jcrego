@@ -8,6 +8,13 @@ const Header = (props) => (
       <div className="logo"></div>
     </Link>
     <Navbar linkHome="Home" link1="Portfolio" link2="Contact"/>
+    <div className='linksdiv'>
+                <ul>
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to='#portfolio'>Portfolio</Link></li>
+                    <li><Link to='#contact'>Contact</Link></li>
+                </ul>
+            </div>
   </section>
 )
 
