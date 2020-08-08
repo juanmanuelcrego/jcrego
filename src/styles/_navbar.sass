@@ -1,0 +1,48 @@
+@import _variables
+.navbar
+    display: flex
+    flex-flow: row wrap
+    align-content: center
+    align-items: center
+    margin-right: 03vw
+    padding: 01vw
+    border-radius: 05px
+    ul
+        display: flex
+        min-width: 20vw
+        flex-flow: row wrap
+        justify-content: space-around
+        align-content: center
+        align-items: center
+        list-style: none
+        margin: 0
+        padding: 0
+    li
+        margin: 0
+        padding: 0
+        a
+            list-style: none
+            color: $light-01
+            text-decoration: none
+            font-weight: 100
+            font-size: 0.9rem
+    .menu-div
+        display: none
+
+@media screen and ( min-width: 0px ) and ( max-width: 767px )
+    .navbar
+        ul
+            li
+                display: none
+                a
+                    margin-left: 5px
+                    margin-right: 5px
+        .menu-div
+            display: flex
+            flex-flow: column
+            align-content: center
+            cursor: pointer
+            align-items: center
+
+    
+

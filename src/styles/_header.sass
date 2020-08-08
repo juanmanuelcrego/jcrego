@@ -1,0 +1,45 @@
+@import _variables
+.header 
+    display: flex
+    flex-flow: row wrap
+    justify-content: space-between
+    align-items: center
+    align-content: center
+    width: 100vw
+    height: 66px
+    background-color: $dark-02
+    box-shadow: 0 0 05px 02px rgba(0, 0, 0, 0.2)
+    position: fixed
+    top: 0
+    z-index: 999
+    .logo
+        background-image: url('../images/jCrego Logo.png')
+        background-repeat: no-repeat
+        background-size: cover
+        height: 60px
+        width: 60px
+        border-radius: 100%
+        margin-left: 03vw
+    .linksdiv
+        display: none
+        position: absolute
+        right: 0
+        padding: 2vw
+        background-color: $dark-02
+        top: 66px
+        ul
+            list-style: none
+            margin: 0
+            padding: 0
+            text-align: center
+
+
+@media screen and ( min-width: 0px ) and ( max-width: 189px )
+    .header
+        flex-flow: row
+        .logo
+            display: none
+
+@media screen and ( min-width: 189px ) and ( max-width: 255px )
+    .header
+        flex-flow: row
