@@ -5,6 +5,8 @@ module.exports = {
     author: `Juan Manuel Crego Risso`,
   },
   plugins: [
+    'gatsby-plugin-emotion',
+    'gatsby-plugin-dark-mode',
     `gatsby-transformer-sharp`, 
     `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
