@@ -1,13 +1,19 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import Article from "../components/article"
 
-const IndexPage = () => (
+import ButtonToggle from '../Theme/buttonToggle'
+
+
+const IndexPage = () => {
+
+return (
     <Layout>
+        <ButtonToggle></ButtonToggle>
         <Article></Article>
     </Layout>
 )
+}
 
 export default IndexPage
