@@ -102,6 +102,7 @@
 }
 body {
   margin: 0;
+  background-color: #fff;
 }
 body a {
   text-shadow: none;
@@ -322,6 +323,30 @@ body hr {
   cursor: default;
 }
 
+.themebtn {
+  background-color: transparent;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.light {
+  background-image: url("../images/light.png");
+  width: 15px;
+  height: 22px;
+  padding: 0;
+}
+
+.moon {
+  background-image: url("../images/moon.png");
+  width: 15px;
+  height: 15px;
+  padding: 0;
+}
+
 .footer {
   display: flex;
   flex-flow: column;
@@ -345,9 +370,6 @@ body hr {
 .portfolio h1, .portfolio h2, .portfolio h3, .portfolio h4 {
   margin-top: 20px;
   color: #eee;
-}
-.portfolio .title-portfolio {
-  color: #222;
 }
 .portfolio .card-div {
   margin-top: 100px;
