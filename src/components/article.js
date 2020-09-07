@@ -5,7 +5,6 @@ import Contact from './contact'
 import Footer from './footer'
 import Portfolio from './portfolio'
 
-
 const Article = () => {
 
     const [leerMas, setLeerMas] = useState(false)
@@ -73,6 +72,7 @@ const Article = () => {
             <div className='about-text'>
 
                 <h2>About</h2>
+
                 <Avatar></Avatar>
                 {/* VER EN 246 PARA FIGMA  */}
                 <p id='p'> 
