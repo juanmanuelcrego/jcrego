@@ -17,11 +17,10 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Container fluid>
+      <Container fluid >
         <Row>
           <Header />
-          <Col>
-            <section>
+          <Col xs={12} md={12}>
               <Global
                 styles={css`
                   * {
@@ -42,7 +41,6 @@ const Layout = ({ children }) => {
                 `}
               />
               {children}
-            </section>
           </Col>
         </Row>
       </Container>
