@@ -33,7 +33,8 @@ const Layout = ({ children }) => {
                   }
                   h1,
                   h2,
-                  p {
+                  p,
+                  label {
                     color: ${state.isDark ? theme.dark.font : theme.light.font};
                   }
                 `}
