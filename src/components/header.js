@@ -2,17 +2,21 @@ import React from "react"
 import Navbar from "./navbar"
 import { Link } from "gatsby"
 import ButtonToggle from "../Theme/buttonToggle"
+import Cafecito from "./cafecito"
 
 const Header = props => (
   <section className="header">
     <Link to="/">
       <div className="logo"></div>
     </Link>
-    <Navbar linkHome="Home" link1="Portfolio" link2="Contact" />
+    <Navbar/>
     <div className="linksdiv">
       <ul>
         <li>
           <ButtonToggle></ButtonToggle>
+        </li>
+        <li>
+          <Cafecito></Cafecito>
         </li>
         <li>
           <Link to="/">Home</Link>

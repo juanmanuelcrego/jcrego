@@ -4,7 +4,6 @@ import Skills from "./skills"
 import Contact from "./contact"
 import Footer from "./footer"
 import Portfolio from "./portfolio"
-import Cafecito from "./cafecito"
 import { Container, Row, Col } from "react-bootstrap"
 
 const Article = () => {
@@ -113,7 +112,6 @@ const Article = () => {
               <Portfolio></Portfolio>
 
               <Contact></Contact>
-                <Cafecito></Cafecito>
               <Footer></Footer>
             </div>
           </article>
