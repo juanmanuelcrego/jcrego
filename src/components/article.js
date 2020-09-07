@@ -80,7 +80,7 @@ const Article = () => {
   return (
     <Container fluid>
       <Row className="justify-content-md-center">
-        <Col xs={{offset: 6}} sm={12} md={12} lg={5} xl={5}>
+        <Col xs={12} sm={12}>
           <div>
             <h2>Sitio en mantenimiento!</h2>
             <h2>Sitio en mantenimiento!</h2>
