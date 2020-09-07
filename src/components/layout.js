@@ -17,6 +17,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
+    <section>
           <Header />
               <Global
                 styles={css`
@@ -38,6 +39,7 @@ const Layout = ({ children }) => {
                 `}
               />
               {children}
+        </section>
     </>
   )
 }
