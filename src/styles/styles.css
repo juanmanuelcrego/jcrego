@@ -279,6 +279,7 @@ body hr {
 @media screen and (min-width: 256px) and (max-width: 420px) {
   .contact form {
     min-width: 10px;
+    min-width: 100vw;
     align-content: center;
     align-items: center;
     justify-content: center;
