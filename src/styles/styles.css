@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: center;
   align-content: center;
-  width: 100vw;
+  width: 100%;
   height: 66px;
   background-color: #222;
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
@@ -92,6 +92,9 @@
     margin-left: 5px;
     margin-right: 5px;
   }
+  .navbar ul .toggleresponsive {
+    display: none;
+  }
   .navbar .menu-div {
     display: flex;
     flex-flow: column;
@@ -129,7 +132,6 @@ body hr {
 .about-content {
   display: flex;
   flex-flow: row wrap;
-  width: 100vw;
   align-content: center;
   align-items: center;
   justify-content: center;
@@ -140,7 +142,6 @@ body hr {
   flex-flow: column;
   align-content: center;
   align-items: center;
-  max-width: 600px;
 }
 .about-content .about-text #link {
   text-decoration: underline;
@@ -165,15 +166,16 @@ body hr {
   }
   body .about-content {
     flex-flow: column;
-    width: 100vw;
     margin-top: 50px;
   }
   body .about-content .about-text {
     margin: 0;
-    width: 100vw;
   }
   body .about-content .about-text p, body .about-content .about-text label {
     margin: 0 30px 0 30px;
+  }
+  body .toggleresponsive {
+    display: none;
   }
 }
 .avatar {
@@ -185,11 +187,6 @@ body hr {
   height: 120px;
   margin-top: 10px;
   margin-bottom: 40px;
-}
-.avatar .line {
-  height: 1px;
-  width: 200px;
-  background-color: #eee;
 }
 .avatar .pic {
   border-radius: 100%;
@@ -227,7 +224,6 @@ body hr {
   align-items: center;
 }
 .skills .skills-div {
-  max-width: 360px;
   display: flex;
   flex-flow: row wrap;
   align-content: center;
@@ -258,6 +254,7 @@ body hr {
   justify-content: center;
   align-content: center;
   align-items: center;
+  margin-top: 20vh;
 }
 .contact form {
   display: flex;
@@ -265,7 +262,7 @@ body hr {
   justify-content: space-around;
   align-content: center;
   min-height: 400px;
-  min-width: 600px;
+  width: 100%;
 }
 .contact form div {
   display: flex;
@@ -335,6 +332,7 @@ body hr {
 
 .light {
   background-image: url("../images/light.png");
+  background-repeat: no-repeat;
   width: 15px;
   height: 22px;
   padding: 0;
@@ -342,6 +340,7 @@ body hr {
 
 .moon {
   background-image: url("../images/moon.png");
+  background-repeat: no-repeat;
   width: 15px;
   height: 15px;
   padding: 0;
@@ -356,11 +355,8 @@ body hr {
 }
 
 .portfolio {
-  display: flex;
-  flex-flow: column;
   justify-content: space-around;
   align-items: center;
-  max-width: 800px;
   min-height: 800px;
   margin-top: 100px;
   background-color: rgba(0, 0, 0, 0.05);
@@ -369,7 +365,6 @@ body hr {
 }
 .portfolio h1, .portfolio h2, .portfolio h3, .portfolio h4 {
   margin-top: 20px;
-  color: #eee;
 }
 .portfolio .card-div {
   margin-top: 100px;
@@ -378,7 +373,6 @@ body hr {
   box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.4);
   transition: 1s;
   background-color: #222;
-  max-width: 400px;
 }
 .portfolio .card-div:hover {
   transform: translateY(10px);
@@ -388,7 +382,7 @@ body hr {
   flex-flow: column;
   align-content: center;
   align-items: center;
-  max-width: 400px;
+  width: 100%;
   box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.4);
   background-color: #111;
   color: #eee;
@@ -397,6 +391,10 @@ body hr {
   font-size: 10pt;
   padding: 10px;
   text-align: center;
+  color: #fff;
+}
+.portfolio .card-div .portfolio-card h1, .portfolio .card-div .portfolio-card h2, .portfolio .card-div .portfolio-card h3, .portfolio .card-div .portfolio-card h4, .portfolio .card-div .portfolio-card h5, .portfolio .card-div .portfolio-card h6 {
+  color: #eee;
 }
 .portfolio .card-div .portfolio-card .card-codes {
   display: flex;
@@ -410,7 +408,7 @@ body hr {
   transform: scale(0.6);
 }
 .portfolio .card-div .screen {
-  max-width: 400px;
+  max-width: 100%;
   max-height: 300px;
   filter: grayscale(1);
   transition: 1s;
@@ -420,8 +418,12 @@ body hr {
 }
 .portfolio .card-div .screen Img {
   display: block;
-  max-width: 400px;
+  width: 100%;
   max-height: 600px;
+}
+.portfolio .portfolio-slider {
+  display: flex;
+  flex-flow: row;
 }
 
 @media screen and (min-width: 120px) and (max-width: 630px) {
@@ -444,6 +446,12 @@ body hr {
   .portfolio .card-div .screen {
     max-width: 900px;
   }
+}
+.cafecito {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 99999;
 }
 
 /*# sourceMappingURL=styles.css.map */
