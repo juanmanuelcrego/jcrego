@@ -159,6 +159,12 @@ body hr {
   margin: 0;
   padding: 0;
 }
+.about-content .themebtn {
+  display: none;
+}
+.about-content .light {
+  display: none;
+}
 
 @media screen and (min-width: 0px) and (max-width: 767px) {
   body {
@@ -174,7 +180,7 @@ body hr {
   body .about-content .about-text p, body .about-content .about-text label {
     margin: 0 30px 0 30px;
   }
-  body .toggleresponsive {
+  body .about-content .toggleresponsive {
     display: none;
   }
 }
