@@ -1,9 +1,6 @@
 .portfolio
-    display: flex
-    flex-flow: column
     justify-content: space-around
     align-items: center
-    max-width: 800px
     min-height: 800px
     margin-top: 100px  
     background-color: rgba(0, 0, 0, 0.05)
@@ -11,9 +8,6 @@
     padding: 02vw
     h1, h2, h3, h4
         margin-top: 20px
-        color: $light-01
-    .title-portfolio
-        // color: $dark-02
     .card-div
         margin-top: 100px
         display: flex
@@ -21,7 +15,7 @@
         box-shadow: 0 0 10px 03px rgba(0, 0, 0, 0.4)
         transition: 01s
         background-color: $dark-02
-        max-width: 400px
+        // max-width: 400px
         &:hover
             transform: translateY(10px)
         .portfolio-card
@@ -29,7 +23,7 @@
             flex-flow: column
             align-content: center
             align-items: center
-            max-width: 400px
+            width: 100%
             box-shadow: 0 0 10px 03px rgba(0, 0, 0, 0.4)
             background-color: $dark-01
             color: $light-01
@@ -37,6 +31,9 @@
                 font-size: 10pt
                 padding: 10px
                 text-align: center
+                color: #fff
+            h1, h2, h3, h4, h5, h6
+                color: $light-01
             .card-codes
                 display: flex
                 flex-flow: row
@@ -47,7 +44,7 @@
                     border-radius: 100%
                     transform: scale(0.6)
         .screen
-            max-width: 400px
+            max-width: 100%
             max-height: 300px
             filter: grayscale(1)
             transition: 01s
@@ -55,10 +52,13 @@
                 filter: grayscale(0)
             Img
                 display: block
-                max-width: 400px
+                width: 100%
                 max-height: 600px
     
-// @media screen and ( min-width: 0px ) and ( max-width: 189px )
+    .portfolio-slider
+        display: flex
+        flex-flow: row
+            
 
 
 @media screen and ( min-width: 120px ) and ( max-width: 630px )
