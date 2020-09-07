@@ -11,7 +11,7 @@
         justify-content: space-around
         align-content: center
         min-height: 400px
-        width: 100%
+        min-width: 90vw
         div
             display: flex
             flex-flow: column
@@ -23,23 +23,17 @@
         input[name='message']
             height: 100px
         button
+            min-width: 90vw
+            margin-top: 20px
             align-self: center
 
 @media screen and ( min-width: 256px ) and ( max-width: 420px )
     .contact
-        max-width: 100px
         form
-            min-width: 10px
-            max-width: 100px
+            min-width: 90vw
             align-content: center
             align-items: center
             justify-content: center
             div
                 label
                     font-size: 08px
-
-@media screen and ( min-width: 420px ) and ( max-width: 620px )
-    .contact
-        max-width: 400px
-        form
-            min-width: 100px

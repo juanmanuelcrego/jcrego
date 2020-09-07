@@ -254,7 +254,7 @@ body hr {
   justify-content: space-around;
   align-content: center;
   min-height: 400px;
-  min-width: 100vw;
+  min-width: 90vw;
 }
 .contact form div {
   display: flex;
@@ -271,15 +271,14 @@ body hr {
   height: 100px;
 }
 .contact form button {
-  min-width: 100vw;
+  min-width: 90vw;
   margin-top: 20px;
   align-self: center;
 }
 
 @media screen and (min-width: 256px) and (max-width: 420px) {
   .contact form {
-    min-width: 10px;
-    min-width: 100vw;
+    min-width: 90vw;
     align-content: center;
     align-items: center;
     justify-content: center;
@@ -319,7 +318,7 @@ body hr {
   transition: 0.3s ease-in-out;
 }
 
-.light {
+.lightbtn {
   background-image: url("../images/light.png");
   background-repeat: no-repeat;
   width: 15px;
@@ -327,7 +326,7 @@ body hr {
   padding: 0;
 }
 
-.moon {
+.moonbtn {
   background-image: url("../images/moon.png");
   background-repeat: no-repeat;
   width: 15px;
