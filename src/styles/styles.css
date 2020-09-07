@@ -254,6 +254,7 @@ body hr {
   justify-content: space-around;
   align-content: center;
   min-height: 400px;
+  min-width: 100vw;
 }
 .contact form div {
   display: flex;
@@ -270,6 +271,8 @@ body hr {
   height: 100px;
 }
 .contact form button {
+  min-width: 100vw;
+  margin-top: 20px;
   align-self: center;
 }
 
@@ -282,11 +285,6 @@ body hr {
   }
   .contact form div label {
     font-size: 8px;
-  }
-}
-@media screen and (min-width: 420px) and (max-width: 620px) {
-  .contact form {
-    min-width: 100px;
   }
 }
 .jc-btn {
