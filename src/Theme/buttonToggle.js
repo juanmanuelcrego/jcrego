@@ -10,7 +10,7 @@ const ButtonToggle = () => {
     const {state, dispatch} = useContext(Context)
     const theme = useTheme()
     
-    const button = state.isDark ? <button className='themebtn moon'></button> : <button className='themebtn moon'></button>
+    const button = state.isDark ? <button className='themebtn moonbtn'></button> : <button className='themebtn lightbtn'></button>
 
 return (
         <div>
