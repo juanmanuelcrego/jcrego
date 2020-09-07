@@ -78,9 +78,9 @@ const Article = () => {
     : "Continuar leyendo  y ver skills >>"
 
   return (
-    <Container>
+    <Container fluid>
       <Row className="justify-content-md-center">
-        <Col xs={12} sm={10} md={10} lg={8} xl={8}>
+        <Col xs={12} sm={12} md={12} lg={8} xl={8}>
           <article className="about-content">
             <div className="about-text">
               <h2>About</h2>
