@@ -29,10 +29,10 @@ const Menu = () => (
 const boton = () => {
     let linksdiv = document.querySelector('div.linksdiv')
 
-    if (linksdiv.style.display == 'none') {
-        linksdiv.style.display = 'flex'
-    }else {
+    if (linksdiv.style.display == 'flex') {
         linksdiv.style.display = 'none'
+    }else {
+        linksdiv.style.display = 'flex'
     }
 
 }
