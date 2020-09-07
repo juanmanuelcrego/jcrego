@@ -78,19 +78,40 @@ const Article = () => {
     : "Continuar leyendo  y ver skills >>"
 
   return (
-    <Container fluid>
-      <Row className="justify-content-md-center">
-        <Col xs={12} sm={12}>
-          <div>
-            <h2>Sitio en mantenimiento!</h2>
-            <h2>Sitio en mantenimiento!</h2>
-            <h2>Sitio en mantenimiento!</h2>
-            <h2>Sitio en mantenimiento!</h2>
+    <article className="about-content">
+<div className="about-text">
+  <h2>About</h2>
+  <Avatar></Avatar>
+  {/* VER EN 246 PARA FIGMA  */}
+  <p id="p">
+    Hola! mi nombre es Juan Manuel Crego Risso, tengo 29 años y soy
+    de Buenos Aires, Argentina. Trabajo como Front End Developer y
+    me gustaría contarte porqué elegí el Front End no solo como
+    profesión, sino también como medio por el que expreso mi pasión,
+    el diseño. Desde chico siempre me gustó el arte y la tecnología,
+    por lo que conseguir llevar a cabo mis ideas a través de una
+    computadora era cuestión de tiempo, de aprendizaje y por sobre
+    todas las cosas, mucha dedicación, trabajo, horas de estudio,
+    pruebas y errores.
+  </p>
+  {/* LEER MAS  */}
+  {leerMas && textoCompleto}
+  <a
+    onClick={() => {
+      setLeerMas(!leerMas)
+    }}
+  >
+    <a href="#p" id="link">
+      {linkMas}
+    </a>
+  </a>
 
-          </div>
-        </Col>
-      </Row>
-    </Container>
+  <Portfolio></Portfolio>
+
+  <Contact></Contact>
+  <Footer></Footer>
+</div>
+</article>
   )
 }
 
