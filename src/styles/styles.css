@@ -135,7 +135,7 @@ body hr {
   align-content: center;
   align-items: center;
   justify-content: center;
-  margin-top: 80px;
+  margin-top: 100px;
 }
 .about-content .about-text {
   display: flex;
@@ -159,6 +159,12 @@ body hr {
   margin: 0;
   padding: 0;
 }
+.about-content .themebtn {
+  display: none;
+}
+.about-content .light {
+  display: none;
+}
 
 @media screen and (min-width: 0px) and (max-width: 767px) {
   body {
@@ -166,7 +172,7 @@ body hr {
   }
   body .about-content {
     flex-flow: column;
-    margin-top: 50px;
+    margin-top: 80px;
   }
   body .about-content .about-text {
     margin: 0;
@@ -174,7 +180,7 @@ body hr {
   body .about-content .about-text p, body .about-content .about-text label {
     margin: 0 30px 0 30px;
   }
-  body .toggleresponsive {
+  body .about-content .toggleresponsive {
     display: none;
   }
 }
@@ -447,7 +453,8 @@ body hr {
     max-width: 900px;
   }
 }
-.cafecito {
+.cafecito-app {
+  position: absolute;
   position: fixed;
   bottom: 0;
   right: 0;
