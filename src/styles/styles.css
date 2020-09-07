@@ -36,6 +36,19 @@
   text-align: center;
 }
 
+@media screen and (min-width: 0px) and (max-width: 189px) {
+  .header {
+    flex-flow: row;
+  }
+  .header .logo {
+    display: none;
+  }
+}
+@media screen and (min-width: 189px) and (max-width: 255px) {
+  .header {
+    flex-flow: row;
+  }
+}
 .navbar {
   display: flex;
   flex-flow: row wrap;
@@ -78,6 +91,18 @@
   align-items: center;
 }
 
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  .navbar ul li {
+    display: none;
+  }
+  .navbar ul li a {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .navbar ul .toggleresponsive {
+    display: none;
+  }
+}
 body {
   margin: 0;
   background-color: #fff;
@@ -107,6 +132,9 @@ body hr {
 .about-content {
   display: flex;
   flex-flow: row wrap;
+  max-width: 100vw;
+  margin-left: 50px;
+  margin-right: 50px;
   align-content: center;
   align-items: center;
   justify-content: center;
@@ -135,6 +163,27 @@ body hr {
   padding: 0;
 }
 
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  body {
+    margin: 0;
+  }
+  body .about-content {
+    flex-flow: column;
+    margin-top: 80px;
+  }
+  body .about-content .themebtn {
+    display: none;
+  }
+  body .about-content .about-text {
+    margin: 0;
+  }
+  body .about-content .about-text .themebtn {
+    display: none;
+  }
+  body .about-content .about-text p, body .about-content .about-text label {
+    margin: 0 30px 0 30px;
+  }
+}
 .avatar {
   display: flex;
   flex-flow: row column;
@@ -144,6 +193,9 @@ body hr {
   height: 120px;
   margin-top: 10px;
   margin-bottom: 40px;
+}
+.avatar .themebtn {
+  display: none;
 }
 .avatar .pic {
   border-radius: 100%;
@@ -168,6 +220,12 @@ body hr {
   transform: translateY(5px);
 }
 
+@media screen and (min-width: 120px) and (max-width: 630px) {
+  .social {
+    min-width: 300px;
+    max-width: 300px;
+  }
+}
 .skills {
   display: flex;
   flex-flow: column;
@@ -218,6 +276,29 @@ body hr {
   align-self: center;
 }
 
+@media screen and (min-width: 256px) and (max-width: 420px) {
+  .contact {
+    max-width: 100px;
+  }
+  .contact form {
+    min-width: 10px;
+    max-width: 100px;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .contact form div label {
+    font-size: 8px;
+  }
+}
+@media screen and (min-width: 420px) and (max-width: 620px) {
+  .contact {
+    max-width: 400px;
+  }
+  .contact form {
+    min-width: 100px;
+  }
+}
 .jc-btn {
   min-width: 100px;
   max-width: 200px;
