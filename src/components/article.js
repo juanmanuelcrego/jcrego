@@ -79,8 +79,8 @@ const Article = () => {
 
   return (
     <Container>
-      <Row>
-        <Col>
+      <Row className="justify-content-md-center">
+        <Col xs={12} sm={10} md={10} lg={8} xl={8}>
           <article className="about-content">
             <div className="about-text">
               <h2>About</h2>
