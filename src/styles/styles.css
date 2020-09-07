@@ -159,10 +159,10 @@ body hr {
   margin: 0;
   padding: 0;
 }
-.about-content .themebtn {
+.about-content .about-text .themebtn, .about-content .about-text .moon, .about-content .about-text .light {
   display: none;
 }
-.about-content .light {
+.about-content .themebtn, .about-content .moon, .about-content .light {
   display: none;
 }
 
@@ -181,6 +181,12 @@ body hr {
     margin: 0 30px 0 30px;
   }
   body .about-content .toggleresponsive {
+    display: none;
+  }
+  body .about-content .themebtn, body .about-content .moon, body .about-content .light {
+    display: none;
+  }
+  body .about-content .themebtn .themebtn, body .about-content .themebtn .moon, body .about-content .themebtn .light, body .about-content .moon .themebtn, body .about-content .moon .moon, body .about-content .moon .light, body .about-content .light .themebtn, body .about-content .light .moon, body .about-content .light .light {
     display: none;
   }
 }
