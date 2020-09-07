@@ -80,7 +80,7 @@ const Article = () => {
   return (
     <Container fluid>
       <Row className="justify-content-md-center">
-        <Col xs={2} sm={12} md={12} lg={8} xl={8}>
+        <Col xs={12} sm={12} md={12} lg={8} xl={8}>
           <article className="about-content">
             <div className="about-text">
               <h2>About</h2>
@@ -109,7 +109,7 @@ const Article = () => {
                 </a>
               </a>
 
-              <Portfolio></Portfolio>
+              {/* <Portfolio></Portfolio> */}
 
               <Contact></Contact>
               <Footer></Footer>

@@ -206,7 +206,7 @@ const Portfolio = props => (
       }
     `}
     render={data => (
-      <Container>
+      <Container fluid>
         <section className="portfolio" id="portfolio">
           <h2 className="title-portfolio">Portfolio</h2>
           <div className="about-text">
