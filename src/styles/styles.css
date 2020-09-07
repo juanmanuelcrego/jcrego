@@ -188,6 +188,7 @@ body hr {
   align-items: center;
   justify-content: space-around;
   height: 120px;
+  width: 100vw;
   margin-top: 10px;
   margin-bottom: 40px;
 }
