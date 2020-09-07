@@ -4,38 +4,48 @@ import PropTypes from "prop-types"
 import Header from "./header"
 // import "../styles/styles.css"
 
-import {Global, css} from "@emotion/core"
-import {useTheme} from "emotion-theming"
+import { Global, css } from "@emotion/core"
+import { useTheme } from "emotion-theming"
 import Context from "../Theme/context"
 
-const Layout = ({ children }) => {
+import { Container, Row, Col } from "react-bootstrap"
 
-  const {state} = useContext(Context)
+const Layout = ({ children }) => {
+  const { state } = useContext(Context)
 
   const theme = useTheme()
 
   return (
     <>
-      <Header />
-      <section>
-        <Global 
-          styles={css`
-            * {
-              margin: 0;
-              padding: 0;
-            }
+      <Container fluid>
+        <Row>
+          <Header />
+          <Col>
+            <section>
+              <Global
+                styles={css`
+                  * {
+                    margin: 0;
+                    padding: 0;
+                  }
 
-            body {
-              background-color: ${state.isDark ? theme.dark.background : theme.light.background}
-            }
-            h1, h2, p {
-              color: ${state.isDark ? theme.dark.font : theme.light.font}
-            }
-          
-          `}
-          />          
-        {children}
-      </section>
+                  body {
+                    background-color: ${state.isDark
+                      ? theme.dark.background
+                      : theme.light.background};
+                  }
+                  h1,
+                  h2,
+                  p {
+                    color: ${state.isDark ? theme.dark.font : theme.light.font};
+                  }
+                `}
+              />
+              {children}
+            </section>
+          </Col>
+        </Row>
+      </Container>
     </>
   )
 }
