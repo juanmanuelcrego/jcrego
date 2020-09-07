@@ -19,9 +19,7 @@ const Avatar = () => (
         }
         render={data => (
             <section className='avatar'>
-                <div className='line'></div>
                 <Img className='pic' fixed={data.profile.childImageSharp.fixed} alt="Profile image" />
-                <div className='line'></div>
             </section>
         )}
     />
