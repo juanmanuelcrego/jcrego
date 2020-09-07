@@ -83,6 +83,13 @@
 .navbar .menu-div {
   display: none;
 }
+.navbar .menu-div {
+  display: flex;
+  flex-flow: column;
+  align-content: center;
+  cursor: pointer;
+  align-items: center;
+}
 
 @media screen and (min-width: 0px) and (max-width: 767px) {
   .navbar ul li {
@@ -94,13 +101,6 @@
   }
   .navbar ul .toggleresponsive {
     display: none;
-  }
-  .navbar .menu-div {
-    display: flex;
-    flex-flow: column;
-    align-content: center;
-    cursor: pointer;
-    align-items: center;
   }
 }
 body {
@@ -159,12 +159,6 @@ body hr {
   margin: 0;
   padding: 0;
 }
-.about-content .about-text .themebtn, .about-content .about-text .moon, .about-content .about-text .light {
-  display: none;
-}
-.about-content .themebtn, .about-content .moon, .about-content .light {
-  display: none;
-}
 
 @media screen and (min-width: 0px) and (max-width: 767px) {
   body {
@@ -179,15 +173,6 @@ body hr {
   }
   body .about-content .about-text p, body .about-content .about-text label {
     margin: 0 30px 0 30px;
-  }
-  body .about-content .toggleresponsive {
-    display: none;
-  }
-  body .about-content .themebtn, body .about-content .moon, body .about-content .light {
-    display: none;
-  }
-  body .about-content .themebtn .themebtn, body .about-content .themebtn .moon, body .about-content .themebtn .light, body .about-content .moon .themebtn, body .about-content .moon .moon, body .about-content .moon .light, body .about-content .light .themebtn, body .about-content .light .moon, body .about-content .light .light {
-    display: none;
   }
 }
 .avatar {
@@ -458,13 +443,6 @@ body hr {
   .portfolio .card-div .screen {
     max-width: 900px;
   }
-}
-.cafecito-app {
-  position: absolute;
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  z-index: 99999;
 }
 
 /*# sourceMappingURL=styles.css.map */
