@@ -56,6 +56,20 @@ const Portfolio = props => (
             }
           }
         }
+        adversario: file(relativePath: { eq: "portfolio/adversario.png" }) {
+          childImageSharp {
+            fluid(maxWidth: 1000, maxHeight: 400) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        matarikii: file(relativePath: { eq: "portfolio/matariki.png" }) {
+          childImageSharp {
+            fluid(maxWidth: 1000, maxHeight: 400) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
         html: file(relativePath: { eq: "html.png" }) {
           childImageSharp {
             fixed(width: 60, height: 60) {
@@ -218,6 +232,92 @@ const Portfolio = props => (
             </p>
           </div>
           <Carousel>
+          <Carousel.Item>
+              <Row>
+                <Col>
+                  {/* MATARIKI */}
+                  <div className="card-div">
+                    <div className="portfolio-card">
+                      <div className="card-header">
+                        <h3>Matariki</h3>
+                      </div>
+                      <div className="card-description">
+                        <p>
+                          Matariki es una web diseñada con Wordpress ¿Te gustaría visitar el sitio?
+                        </p>
+                      </div>
+                      <a href="https://matarikicaps-shop.com/" target="_blank">
+                        <button className="jc-btn">Visitar!</button>
+                      </a>
+                      <div className="card-codes">
+                        <Img
+                          className="skill-box"
+                          title="Wordpress"
+                          fixed={data.wordpress.childImageSharp.fixed}
+                          alt="wordpress Skill"
+                        />
+                        <Img
+                          className="skill-box"
+                          title="Elementor"
+                          fixed={data.elementor.childImageSharp.fixed}
+                          alt="elementor Skill"
+                        />
+                      </div>
+                    </div>
+                    <div className="screen">
+                      <Img
+                        className="skill-box"
+                        fluid={data.matarikii.childImageSharp.fluid}
+                        alt="Matariki - Portfolio"
+                      />
+                    </div>
+                  </div>
+                </Col>
+              </Row>
+            </Carousel.Item>
+            <Carousel.Item>
+              <Row>
+                <Col>
+                  {/* ADVERSARIO */}
+                  <div className="card-div">
+                    <div className="portfolio-card">
+                      <div className="card-header">
+                        <h3>El Adversario</h3>
+                      </div>
+                      <div className="card-description">
+                        <p>
+                          El Adversario es una web diseñada con Wordpress ¿Te gustaría visitar el sitio?
+                        </p>
+                      </div>
+                      <a href="https://eladversario.com/" target="_blank">
+                        <button className="jc-btn">Visitar!</button>
+                      </a>
+                      <div className="card-codes">
+                        <Img
+                          className="skill-box"
+                          title="Wordpress"
+                          fixed={data.wordpress.childImageSharp.fixed}
+                          alt="wordpress Skill"
+                        />
+                        <Img
+                          className="skill-box"
+                          title="Elementor"
+                          fixed={data.elementor.childImageSharp.fixed}
+                          alt="elementor Skill"
+                        />
+                      </div>
+                    </div>
+                    <div className="screen">
+                      <Img
+                        className="skill-box"
+                        fluid={data.adversario.childImageSharp.fluid}
+                        alt="Adversario - Portfolio"
+                      />
+                    </div>
+                  </div>
+                </Col>
+              </Row>
+            </Carousel.Item>
             <Carousel.Item>
               <Row>
                 <Col>
@@ -575,6 +675,8 @@ const Portfolio = props => (
                 </Col>
               </Row>
             </Carousel.Item>
+
+          
           </Carousel>
         </section>
       </Container>
